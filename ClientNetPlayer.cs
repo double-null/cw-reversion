@@ -332,20 +332,8 @@ internal class ClientNetPlayer : BaseRpcNetPlayer
 		if (base.GetType() == typeof(ClientNetPlayer))
 		{
 			PlayerClass playerClass = Main.UserInfo.playerClass;
-			if (playerClass == PlayerClass.storm_trooper && this.playerInfo.clanSkillUnlocked(Cl_Skills.cl_storm2))
-			{
-				Thermal.AddTo(this._playerMainCamera);
-				Thermal.ForceSwitchOff();
-			}
-			if (playerClass == PlayerClass.scout && this.playerInfo.clanSkillUnlocked(Cl_Skills.cl_scout2))
-			{
-				Binocular.AddTo(this._playerMainCamera);
-				Binocular.HighLight = this.playerInfo.clanSkillUnlocked(Cl_Skills.cl_scout3);
-				if (base.Ammo != null)
-				{
-					base.Ammo.CanUseBinocular = true;
-				}
-			}
+			Thermal.AddTo(this._playerMainCamera);
+			Thermal.ForceSwitchOff();
 			RainController rainController = UnityEngine.Object.FindObjectOfType(typeof(RainController)) as RainController;
 			if (rainController != null)
 			{

@@ -92,10 +92,7 @@ internal class Thermal : MonoBehaviour
 	// Token: 0x06000FC0 RID: 4032 RVA: 0x000B3828 File Offset: 0x000B1A28
 	public void DrawMask()
 	{
-		if (this._on)
-		{
-			this.mask.DrawGL();
-		}
+		
 	}
 
 	// Token: 0x06000FC1 RID: 4033 RVA: 0x000B3840 File Offset: 0x000B1A40
