@@ -1,0 +1,20 @@
+﻿using System;
+
+// Token: 0x0200028D RID: 653
+public enum TOOLS_MENU
+{
+	// Token: 0x040014EF RID: 5359
+	MAIN,
+	// Token: 0x040014F0 RID: 5360
+	TOOLS,
+	// Token: 0x040014F1 RID: 5361
+	COLLIDERS,
+	// Token: 0x040014F2 RID: 5362
+	TERRAIN,
+	// Token: 0x040014F3 RID: 5363
+	REVELATIONS,
+	// Token: 0x040014F4 RID: 5364
+	MEMORY,
+	// Token: 0x040014F5 RID: 5365
+	ANIMATION
+}
