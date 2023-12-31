@@ -4,3 +4,4 @@
 
 1. Thermal hack
 2. Remove FOG
+3. Radar enable

@@ -524,11 +524,7 @@ internal class RadarGUI : Form
 	// Token: 0x06000A67 RID: 2663 RVA: 0x0007B560 File Offset: 0x00079760
 	private bool CanShowSupportInHardcore()
 	{
-		if (Peer.HardcoreMode)
-		{
-			return this.canShowSupport;
-		}
-		return !Peer.HardcoreMode;
+		return true;
 	}
 
 	// Token: 0x06000A68 RID: 2664 RVA: 0x0007B580 File Offset: 0x00079780
