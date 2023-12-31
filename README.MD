@@ -5,3 +5,4 @@
 1. Thermal hack
 2. Remove FOG
 3. Radar enable
+4. Teammate identification (Hardcore)

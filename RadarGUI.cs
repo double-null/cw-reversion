@@ -362,10 +362,6 @@ internal class RadarGUI : Form
 			Debug.LogError("he is not a friend!");
 			return;
 		}
-		if (this.SkipIfOptic() || Peer.HardcoreMode)
-		{
-			return;
-		}
 		alpha *= Main.UserInfo.settings.radarAlpha;
 		if (!Main.IsTeamGame)
 		{
