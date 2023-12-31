@@ -805,18 +805,6 @@ internal class Thermal : MonoBehaviour
 			{
 				this.sunSecond.enabled = false;
 			}
-			RenderSettings.skybox = this.BlackSkybox;
-			RenderSettings.fogColor = Color.black;
-			if (Peer.ClientGame.LocalPlayer.playerInfo.clanSkillUnlocked(Cl_Skills.cl_storm3))
-			{
-				RenderSettings.fogDensity = 0.03f;
-			}
-			else
-			{
-				RenderSettings.fogDensity = 0.05f;
-			}
-			RenderSettings.fogMode = FogMode.ExponentialSquared;
-			RenderSettings.ambientLight = new Color32(125, 147, 160, byte.MaxValue);
 			SunOnGlass.SunOnGlassInstance.enabled = false;
 			SunOnGlass.SunShaftsInstance.enabled = false;
 		}
