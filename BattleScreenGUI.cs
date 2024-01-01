@@ -390,24 +390,22 @@ internal class BattleScreenGUI : Form
 				this.gui.Picture(new Vector2((float)(Screen.width - 125), (float)(Screen.height - 50)), this.NO_AMMO);
 			}
 		}
-		if (!Peer.HardcoreMode)
+		
+		if (this.stab_alpha.Visible)
 		{
-			if (this.stab_alpha.Visible)
-			{
-				this.gui.color = Colors.alpha(Color.red, this.stab_alpha.visibility);
-				this.gui.RotateGUI(45f, new Vector2((float)(Screen.width / 2), (float)(Screen.height / 2)));
-				this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - (int)(4f / this.deltaLen) - (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossLeft, Vector2.one, false);
-				this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 + (int)(4f / this.deltaLen) + (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossRight, Vector2.one, false);
-				this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 - (int)(4f / this.deltaLen) - (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossUp, Vector2.one, false);
-				this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 + (int)(4f / this.deltaLen) + (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossDown, Vector2.one, false);
-				this.gui.RotateGUI(0f, Vector2.zero);
-			}
-			this.gui.color = new Color(1f, 1f, 1f, this.accuracy);
-			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - (int)(8f / this.deltaLen) - (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossLeft, Vector2.one, false);
-			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 + (int)(8f / this.deltaLen) + (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossRight, Vector2.one, false);
-			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 - (int)(8f / this.deltaLen) - (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossUp, Vector2.one, false);
-			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 + (int)(8f / this.deltaLen) + (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossDown, Vector2.one, false);
+			this.gui.color = Colors.alpha(Color.red, this.stab_alpha.visibility);
+			this.gui.RotateGUI(45f, new Vector2((float)(Screen.width / 2), (float)(Screen.height / 2)));
+			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - (int)(4f / this.deltaLen) - (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossLeft, Vector2.one, false);
+			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 + (int)(4f / this.deltaLen) + (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossRight, Vector2.one, false);
+			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 - (int)(4f / this.deltaLen) - (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossUp, Vector2.one, false);
+			this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 + (int)(4f / this.deltaLen) + (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossDown, Vector2.one, false);
+			this.gui.RotateGUI(0f, Vector2.zero);
 		}
+		this.gui.color = new Color(1f, 1f, 1f, this.accuracy);
+		this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - (int)(8f / this.deltaLen) - (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossLeft, Vector2.one, false);
+		this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 + (int)(8f / this.deltaLen) + (int)((float)Screen.width * this.delta.x) - 1), (float)(Screen.height / 2 - 1)), this.crossRight, Vector2.one, false);
+		this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 - (int)(8f / this.deltaLen) - (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossUp, Vector2.one, false);
+		this.gui.PictureCentereNoScale(new Vector2((float)(Screen.width / 2 - 1), (float)(Screen.height / 2 + (int)(8f / this.deltaLen) + (int)((float)Screen.height * this.delta.x * camera.aspect) - 1)), this.crossDown, Vector2.one, false);
 	}
 
 	// Token: 0x060005DB RID: 1499 RVA: 0x0002D254 File Offset: 0x0002B454
