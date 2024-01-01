@@ -805,6 +805,10 @@ internal class Thermal : MonoBehaviour
 			{
 				this.sunSecond.enabled = false;
 			}
+			RenderSettings.skybox = this.BlackSkybox;
+			RenderSettings.fogColor = Color.black;
+			RenderSettings.fogDensity = 0f;
+			RenderSettings.ambientLight = new Color32(125, 147, 160, byte.MaxValue);
 			SunOnGlass.SunOnGlassInstance.enabled = false;
 			SunOnGlass.SunShaftsInstance.enabled = false;
 		}
